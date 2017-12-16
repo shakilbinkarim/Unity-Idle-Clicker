@@ -10,6 +10,8 @@ Idle Clicker Game - Unity - C# - Part-1 - Introduction - https://youtu.be/MW2nir
 
 Idle Clicker Game - Unity - C# - Part-2 - https://youtu.be/E32JQ4bTIQ0
 
+Idle Clicker Game - Unity - C# - Part-3 - https://youtu.be/RGtUAio_4pY
+
 # Contact
 Feel free to contact me through my website http://learningfromscratch.online/
 >If you are following this tutorial series I would appreciate if you can subscribe and like my videos as it will keep me motivated to share my knowledge with you all!
