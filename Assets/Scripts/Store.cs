@@ -20,28 +20,33 @@ public class Store : MonoBehaviour {
 	public int storeMultiplier;
 	public int storeCount;
 
+	public bool hasManager = false;
+
+
 	// Use this for initialization
 	void Start () {
 		storeCountText.text = storeCount.ToString ();
 		buyButtonText.text = "Buy ($" + baseStorePrice.ToString () + ")";
+		currentTimer = 0;
+
 	}
 	
 	// Update is called once per frame
 	void Update () {
-		if (startTimer) {
+		if (startTimer || hasManager) {
 			currentTimer = currentTimer + Time.deltaTime;
 			progressSlider.value = currentTimer / storeTimer;
 			if (currentTimer > storeTimer) {
 				startTimer = false;
 				gm.addToBalance (profit * storeCount);
 				progressSlider.value = 0;
+				currentTimer = 0;
 			}
 		}
 	}
 
 	public void clickme() {
 		if (storeCount > 0) {
-			currentTimer = 0;
 			startTimer = true;
 		}
 	}
