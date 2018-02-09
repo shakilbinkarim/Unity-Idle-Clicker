@@ -2,9 +2,9 @@
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="Unity.Instance.Unity Editor" />
   <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\Store.cs">
     <Files>
-      <File FileName="Assets\Scripts\Store.cs" Line="43" Column="22" />
-      <File FileName="Assets\Scripts\GameManager.cs" Line="20" Column="21" />
-      <File FileName="Assets\Scripts\Manager.cs" Line="22" Column="49" />
+      <File FileName="Assets\Scripts\Store.cs" Line="68" Column="53" />
+      <File FileName="Assets\Scripts\GameManager.cs" Line="26" Column="69" />
+      <File FileName="Assets\Scripts\Manager.cs" Line="8" Column="25" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>

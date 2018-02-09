@@ -56,6 +56,7 @@ GameObject:
   - component: {fileID: 222996459706033294}
   - component: {fileID: 114525714301599088}
   - component: {fileID: 114581345987020660}
+  - component: {fileID: 225743583124676388}
   m_Layer: 5
   m_Name: Store
   m_TagString: Untagged
@@ -215,7 +216,7 @@ MonoBehaviour:
     m_HighlightedTrigger: Highlighted
     m_PressedTrigger: Pressed
     m_DisabledTrigger: Disabled
-  m_Interactable: 1
+  m_Interactable: 0
   m_TargetGraphic: {fileID: 0}
   m_FillRect: {fileID: 224202486497660228}
   m_HandleRect: {fileID: 0}
@@ -512,7 +513,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3bc0d1b8b65a66c42aa26fa04cb2d779, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  gm: {fileID: 0}
+  gm: {fileID: 114331621992887542, guid: df3170ff5da23ae4893ab7876ab59d0d, type: 2}
   progressSlider: {fileID: 114021018351715146}
   storeCountText: {fileID: 114929646781724634}
   buyButtonText: {fileID: 114389746084940794}
@@ -521,6 +522,8 @@ MonoBehaviour:
   baseStorePrice: 15
   storeMultiplier: 6
   storeCount: 0
+  hasManager: 0
+  storeUnlocked: 0
 --- !u!114 &114629180857702224
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -824,3 +827,14 @@ RectTransform:
   m_AnchoredPosition: {x: 1.5000024, y: 0}
   m_SizeDelta: {x: -7.000005, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!225 &225743583124676388
+CanvasGroup:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1247403182873038}
+  m_Enabled: 1
+  m_Alpha: 1
+  m_Interactable: 1
+  m_BlocksRaycasts: 1
+  m_IgnoreParentGroups: 0
