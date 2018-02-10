@@ -65,7 +65,7 @@ public class Store : MonoBehaviour {
 		// If timer started or store has manager then make profit
 		// add profit to balance after current timer crossed store timer
 		// reset current timer
-		if (startTimer || ( hasManager && storeCount > 0) ) {
+		if (startTimer || (hasManager && storeCount > 0)) {
 			currentTimer = currentTimer + Time.deltaTime;
 			progressSlider.value = currentTimer / storeTimer;
 			if (currentTimer > storeTimer) {
@@ -74,6 +74,12 @@ public class Store : MonoBehaviour {
 				progressSlider.value = 0;
 				currentTimer = 0;
 			}
+
+			if (storeTimer <= 0) {
+				progressSlider.value = 1;
+			}
+		} else {
+			progressSlider.value = 0;
 		}
 	}
 
